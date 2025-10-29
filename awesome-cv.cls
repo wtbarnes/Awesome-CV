@@ -661,6 +661,25 @@
   \end{minipage}
 }
 
+% Define a header for the statement
+% Usage \makestatementheader
+\newcommand*{\makestatementheader}[1][]{%
+  \newlength{\headertextwidth}
+  \newlength{\headertitlewidth}
+  \setlength{\headertextwidth}{0.66666667\textwidth}
+  \setlength{\headertitlewidth}{0.3333333\textwidth}
+  \begin{minipage}[b]{\headertitlewidth}%
+    \raggedright\headerlastnamestyle{#1}
+  \end{minipage}
+  \begin{minipage}[b]{\headertextwidth}
+    \raggedleft
+    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
+    \\[\acvHeaderAfterNameSkip]%
+    \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
+    \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
+  \end{minipage}%
+}
+
 % Define a footer for CV
 % Usage: \makecvfooter{<left>}{<center>}{<right>}
 \newcommand*{\makecvfooter}[3]{%
