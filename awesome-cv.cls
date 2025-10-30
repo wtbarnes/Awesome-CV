@@ -794,9 +794,9 @@
   \end{center}
 }
 % Define a line of cv paper for listing publications
-% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
+% Usage: \cvpaper{<title>}{<authors>}{<journal>}{<year>}{<link>}
 \newcommand*{\cvpaper}[5]{%
-  \paperyearstyle{#4} & \papertitlestyle{#1}, \paperauthorstyle{#2}, \paperjournalstyle{#3}, \paperlinkstyle{#5} \\
+  \paperyearstyle{#4} & \papertitlestyle{#1}, \paperauthorstyle{#2}, \paperjournalstyle{#3}\ifempty{#5}{}{, \paperlinkstyle{#5}} \\
 }
 
 % Define an environment for cvskill
