@@ -242,7 +242,7 @@
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
 \newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
-\newcommand*{\bibliographytextstyle}{\fontsize{7pt}{1em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\bibliographytextstyle}{\fontsize{5pt}{1em}\bodyfontlight\upshape\color{graytext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
@@ -859,7 +859,7 @@
   \phantomsection{}
   \lettersectionstyle{#1}
   \color{sectiondivider}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{0.4ex}
+  \par\nobreak\addvspace{0.2ex}
   \bibliographytextstyle
 }
 
