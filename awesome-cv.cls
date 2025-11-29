@@ -852,6 +852,17 @@
   \lettertextstyle
 }
 
+% Define a section for references
+% Usage: \referencesection{<section-title>}
+\newcommand{\referencesection}[1]{%
+  \par\addvspace{2.5ex}
+  \phantomsection{}
+  \lettersectionstyle{#1}
+  \color{sectiondivider}\vhrulefill{0.9pt}
+  \par\nobreak\addvspace{0.4ex}
+  \bibliographytextstyle
+}
+
 % Define a title of the cover letter
 % Usage: \makelettertitle
 \newcommand*{\makelettertitle}{%
